@@ -19,17 +19,17 @@
   # Makes nix-darwin work with zsh. Only bash is enabled by default.
   programs.zsh.enable = true;
 
-  homebrew = {
-    enable = true;
-    onActivation.autoUpdate = true;
-    brews = [];
-    casks = [ "slack" "microsoft-teams" "docker" "amethyst" ];
-  };
+#  homebrew = {
+#    enable = true;
+#    onActivation.autoUpdate = true;
+#    brews = [];
+#    casks = [ "slack" "microsoft-teams" "docker" "amethyst" ];
+#  };
 
   fonts = {
     enableFontDir = true;
     fonts = [ 
-      pkgs.nerdfonts
+      (pkgs.nerdfonts.override { fonts = [ "FiraCode" "DroidSansMono" "JetBrainsMono" ]; })
     ];
   };
 

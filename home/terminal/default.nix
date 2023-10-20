@@ -4,8 +4,8 @@
   programs.kitty = {
     enable = true;
     font = {
-      name = "VictorMono Nerd Font";
-      size = 16;
+      name = "JetBrainsMono Nerd Font";
+      size = 20;
     };
 
     theme = "Tokyo Night"; # TODO: Pick a theme

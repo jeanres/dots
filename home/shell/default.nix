@@ -44,9 +44,18 @@ in
       };
     };
 
+    programs.exa = {
+      enable = true;
+      enableAliases = true;
+    };
+
     programs.bat.enable = true;
     programs.zoxide.enable = true;
-    programs.fzf.enable = true;
+    programs.fzf = {
+      enable = true;
+      enableZshIntegration = true;
+    };
+
     programs.jq.enable = true;
 
     programs.tmux = {

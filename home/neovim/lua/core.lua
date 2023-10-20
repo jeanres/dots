@@ -12,7 +12,8 @@ vim.opt.wrap = false
 vim.opt.laststatus = 3
 vim.opt.termguicolors = true
 vim.opt.swapfile = false
-
+vim.opt.cmdheight = 0
+vim.opt.clipboard = unnamedplus
 vim.g.mapleader = " "
 
 local opts = { noremap = true, silent = true }
