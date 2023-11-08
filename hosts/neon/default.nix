@@ -18,12 +18,12 @@
 
   programs.zsh.enable = true;
 
-#  homebrew = {
-#    enable = true;
-#    onActivation.autoUpdate = true;
-#    brews = [];
-#    casks = [ "slack" "microsoft-teams" "docker" "amethyst" ];
-#  };
+  homebrew = {
+    enable = true;
+    onActivation.autoUpdate = true;
+    brews = [];
+    casks = [ "docker" "amethyst" ];
+  };
 
   fonts = {
     enableFontDir = true;

@@ -15,30 +15,57 @@
 
   outputs = { self, nixpkgs, darwin, home-manager }: {
     darwinConfigurations = {
-      neon = darwin.lib.darwinSystem {
+      "C02YN7HFLVCF" = darwin.lib.darwinSystem {
         system = "aarch64-darwin"; # use "x86_64-darwin" on pre-M1 Mac
-        modules = [
+          modules = [
           ./hosts/neon
           {
             users.users."jeanreswanepoel".home = "/Users/jeanreswanepoel";
           }
-          home-manager.darwinModules.home-manager
-          {
-            home-manager.useGlobalPkgs = true;
-            home-manager.useUserPackages = true;
-            home-manager.users.jeanreswanepoel = { pkgs, ... }: {
-              imports = [
-                ./home/neovim
+        home-manager.darwinModules.home-manager
+        {
+          home-manager.useGlobalPkgs = true;
+          home-manager.useUserPackages = true;
+          home-manager.users.jeanreswanepoel = { pkgs, ... }: {
+            imports = [
+              ./home/neovim
                 ./home/shell
                 ./home/terminal
-              ];
-              home.stateVersion = "22.05";
-              dots.user = {
-                name = "Jeanre Swanepoel";
-                email = "jeanres@icloud.com";
-              };
+            ];
+            home.stateVersion = "22.05";
+            dots.user = {
+              name = "Jeanre Swanepoel";
+              email = "jeanres@icloud.com";
             };
+          };
+        }
+        ];
+      };
+
+      "neon" = darwin.lib.darwinSystem {
+        system = "aarch64-darwin"; # use "x86_64-darwin" on pre-M1 Mac
+          modules = [
+          ./hosts/neon
+          {
+            users.users."jeanreswanepoel".home = "/Users/jeanreswanepoel";
           }
+        home-manager.darwinModules.home-manager
+        {
+          home-manager.useGlobalPkgs = true;
+          home-manager.useUserPackages = true;
+          home-manager.users.jeanreswanepoel = { pkgs, ... }: {
+            imports = [
+              ./home/neovim
+                ./home/shell
+                ./home/terminal
+            ];
+            home.stateVersion = "22.05";
+            dots.user = {
+              name = "Jeanre Swanepoel";
+              email = "jeanres@icloud.com";
+            };
+          };
+        }
         ];
       };
     };
