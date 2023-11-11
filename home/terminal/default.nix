@@ -5,7 +5,7 @@
     enable = true;
     font = {
       name = "JetBrainsMono Nerd Font";
-      size = 20;
+      size = 16;
     };
 
     theme = "Tokyo Night"; # TODO: Pick a theme

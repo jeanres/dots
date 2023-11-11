@@ -41,7 +41,6 @@
         }
         ];
       };
-
       "neon" = darwin.lib.darwinSystem {
         system = "aarch64-darwin"; # use "x86_64-darwin" on pre-M1 Mac
           modules = [
