@@ -3,15 +3,17 @@
 {
   programs.kitty = {
     enable = true;
+
     font = {
       name = "JetBrainsMono Nerd Font";
-      size = 16;
+      size = 20;
     };
 
     theme = "Tokyo Night"; # TODO: Pick a theme
 
     settings = {
       enable_audio_bell = false;
+      copy_on_select = true;
     };
   };
 }

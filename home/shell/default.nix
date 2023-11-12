@@ -64,6 +64,16 @@ in
       escapeTime = 0;
       baseIndex = 1;
       keyMode = "vi";
+      extraConfig = ''
+        set-option -g renumber-windows on
+        set-option -g status-position top
+        bind t 'popup'
+
+        bind-key h select-pane -L
+        bind-key j select-pane -D
+        bind-key k select-pane -U
+        bind-key l select-pane -R
+      '';
     };
 
     programs.git = {
@@ -100,7 +110,7 @@ in
       enable = true;
       enableZshIntegration = true;
       settings = {
-        add_newline = true;
+        add_newline = false;
       };
     };
 
