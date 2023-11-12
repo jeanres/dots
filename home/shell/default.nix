@@ -1,7 +1,20 @@
 { pkgs, lib, inputs, system, config, ... }:
 
 with lib;
-let user = config.dots.user;
+let
+  user = config.dots.user;
+  tokyoNightTmux = pkgs.tmuxPlugins.mkTmuxPlugin
+  {
+    pluginName = "tokyo-night-tmux";
+    version = "unstable-2023-01-06";
+    rtpFilePath = "tokyo-night.tmux";
+    src = pkgs.fetchFromGitHub {
+      owner = "janoamaral";
+      repo = "tokyo-night-tmux";
+      rev = "master";
+      sha256 = "sha256-R1t6E5Dd3Zq0MPdXnYyvU0+juC2/0pt6r+Hi3QeMKm4=";
+    };
+  };
 in
 {
   options.dots.user = {
@@ -64,6 +77,12 @@ in
       escapeTime = 0;
       baseIndex = 1;
       keyMode = "vi";
+      plugins = with pkgs; [
+        {
+          plugin = tokyoNightTmux;
+          extraConfig = "";
+        }
+      ];
       extraConfig = ''
         set -g default-terminal "tmux-256color" 
         set-option -g renumber-windows on
