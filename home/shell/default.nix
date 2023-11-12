@@ -65,6 +65,7 @@ in
       baseIndex = 1;
       keyMode = "vi";
       extraConfig = ''
+        set -g default-terminal "tmux-256color" 
         set-option -g renumber-windows on
         set-option -g status-position top
         bind t 'popup'

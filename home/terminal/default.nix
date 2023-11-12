@@ -5,7 +5,7 @@
     enable = true;
 
     font = {
-      name = "JetBrainsMono Nerd Font";
+      name = "VictorMono Nerd Font";
       size = 20;
     };
 
@@ -15,5 +15,10 @@
       enable_audio_bell = false;
       copy_on_select = true;
     };
+
+    extraConfig = ''
+      italic_font      VictorMono Nerd Font Light Italic
+      bold_italic_font VictorMono Nerd Font Bold Italic
+    '';
   };
 }

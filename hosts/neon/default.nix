@@ -28,7 +28,7 @@
   fonts = {
     enableFontDir = true;
     fonts = [ 
-      (pkgs.nerdfonts.override { fonts = [ "FiraCode" "DroidSansMono" "JetBrainsMono" ]; })
+      (pkgs.nerdfonts.override { fonts = [ "VictorMono" "FiraCode" "DroidSansMono" "JetBrainsMono" ]; })
     ];
   };
 

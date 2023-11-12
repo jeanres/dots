@@ -9,7 +9,7 @@ require("nvim-tree").setup({
     root_folder_label = false
   },
   filters = { 
-    custom = { "^.git$" } 
+    custom = { "^.git$", "^.idea$", "^.direnv$" } 
   },
 })
 
