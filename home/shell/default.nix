@@ -63,7 +63,12 @@ in
     };
 
     programs.bat.enable = true;
-    programs.zoxide.enable = true;
+
+    programs.zoxide = {
+      enable = true;
+      enableZshIntegration = true;
+    };
+
     programs.fzf = {
       enable = true;
       enableZshIntegration = true;

@@ -26,7 +26,9 @@
   };
 
   fonts = {
-    enableFontDir = true;
+    fontDir = {
+      enable = true;
+    };
     fonts = [ 
       (pkgs.nerdfonts.override { fonts = [ "VictorMono" ]; })
     ];
