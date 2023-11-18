@@ -1,12 +1,15 @@
 require("nvim-tree").setup({
   view = {
-    side = "right"
+    side = "left"
   },
   diagnostics = {
     enable = true
   },
   renderer = {
-    root_folder_label = false
+    root_folder_label = false,
+    indent_markers = {
+      enable = true,
+    },
   },
   filters = { 
     custom = { "^.git$", "^.idea$", "^.direnv$" } 

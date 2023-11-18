@@ -19,5 +19,5 @@ vim.g.mapleader = " "
 
 local opts = { noremap = true, silent = true }
 local keymap = vim.api.nvim_set_keymap
-keymap("n","<leader>gg",":lua require('telescope').extensions.git_worktree.git_worktrees()<cr>" ,opts)
+keymap("n","<leader>gb","Gitsigns toggle_current_line_blame" ,opts)
 
