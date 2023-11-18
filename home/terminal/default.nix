@@ -6,10 +6,10 @@
 
     font = {
       name = "VictorMono Nerd Font";
-      size = 20;
+      size = 16;
     };
 
-    theme = "Tokyo Night"; # TODO: Pick a theme
+    theme = "Rosé Pine Moon"; # TODO: Pick a theme
 
     settings = {
       enable_audio_bell = false;
