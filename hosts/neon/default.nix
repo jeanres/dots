@@ -22,7 +22,7 @@
     enable = true;
     onActivation.autoUpdate = true;
     brews = [];
-    casks = [ "docker" "slack" "vladdoster/formulae/vimari" ];
+    casks = [ "docker" "slack" "amethyst" "vladdoster/formulae/vimari" ];
   };
 
   fonts = {
