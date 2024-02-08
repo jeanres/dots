@@ -20,13 +20,13 @@
           modules = [
           ./hosts/neon
           {
-            users.users."jeanre".home = "/Users/jeanre";
+            users.users."jeanres".home = "/Users/jeanres";
           }
         home-manager.darwinModules.home-manager
         {
           home-manager.useGlobalPkgs = true;
           home-manager.useUserPackages = true;
-          home-manager.users.jeanre = { pkgs, ... }: {
+          home-manager.users.jeanres = { pkgs, ... }: {
             imports = [
               ./home/neovim
                 ./home/shell
