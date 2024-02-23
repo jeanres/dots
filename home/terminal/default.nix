@@ -19,6 +19,7 @@
     extraConfig = ''
       italic_font      VictorMono Nerd Font Light Italic
       bold_italic_font VictorMono Nerd Font Bold Italic
+      window_padding_width 10
     '';
   };
 }
