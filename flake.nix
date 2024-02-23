@@ -2,31 +2,31 @@
   description = "Jeanre's system configuration";
 
   inputs = {
-    nixpkgs.url = "github:NixOS/nixpkgs/nixos-23.05";
+    nixpkgs.url = "github:NixOS/nixpkgs/nixos-23.11";
     darwin = {
       url = "github:lnl7/nix-darwin/master";
       inputs.nixpkgs.follows = "nixpkgs";
     };
     home-manager = {
-      url = "github:nix-community/home-manager/release-23.05";
+      url = "github:nix-community/home-manager/release-23.11";
       inputs.nixpkgs.follows = "nixpkgs";
     };
   };
 
   outputs = { self, nixpkgs, darwin, home-manager }: {
     darwinConfigurations = {
-      "neon" = darwin.lib.darwinSystem {
+      "Jeanres-MacBook-Pro" = darwin.lib.darwinSystem {
         system = "aarch64-darwin"; # use "x86_64-darwin" on pre-M1 Mac
           modules = [
-          ./hosts/neon
+          ./hosts/darwin
           {
-            users.users."jeanres".home = "/Users/jeanres";
+            users.users."jeanre".home = "/Users/jeanre";
           }
         home-manager.darwinModules.home-manager
         {
           home-manager.useGlobalPkgs = true;
           home-manager.useUserPackages = true;
-          home-manager.users.jeanres = { pkgs, ... }: {
+          home-manager.users.jeanre = { pkgs, ... }: {
             imports = [
               ./home/neovim
                 ./home/shell

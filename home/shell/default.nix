@@ -38,14 +38,16 @@ in
     programs.zsh = {
       enable = true;
       autocd = true;
-      enableSyntaxHighlighting = true;
+      syntaxHighlighting = {
+        enable = true;
+      };
       history = {
         extended = true;
         expireDuplicatesFirst = true;
       };
     };
 
-    programs.exa = {
+    programs.eza = {
       enable = true;
       enableAliases = true;
     };
