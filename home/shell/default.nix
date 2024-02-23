@@ -45,6 +45,9 @@ in
         extended = true;
         expireDuplicatesFirst = true;
       };
+      shellAliases = {
+        cd = "z";
+      };
     };
 
     programs.eza = {

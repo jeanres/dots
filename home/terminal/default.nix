@@ -6,7 +6,7 @@
 
     font = {
       name = "VictorMono Nerd Font";
-      size = 16;
+      size = 18;
     };
 
     theme = "Rosé Pine Moon"; # TODO: Pick a theme
