@@ -75,7 +75,6 @@ in
       extraConfig = ''
         set -g default-terminal "tmux-256color" 
         set-option -g renumber-windows on
-        set-option -g status-position top
         bind t 'popup'
 
         bind-key h select-pane -L
