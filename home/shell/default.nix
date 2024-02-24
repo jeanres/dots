@@ -83,7 +83,7 @@ in
         {
           plugin = tmuxPlugins.catppuccin;
           extraConfig = '' 
-            set -g @catppuccin_flavour 'mocha'
+            set -g @catppuccin_flavour 'frappe'
             set -g @catppuccin_status_modules "battery session"
             set -g @catppuccin_status_left_separator "█"
             set -g @catppuccin_status_right_separator "█"
@@ -100,6 +100,7 @@ in
       extraConfig = ''
         set -g default-terminal "tmux-256color" 
         set-option -g renumber-windows on
+        set-option -g status-position top
         bind t 'popup'
 
         bind-key h select-pane -L
