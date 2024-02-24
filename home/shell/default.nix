@@ -48,6 +48,9 @@ in
       shellAliases = {
         cd = "z";
       };
+      initExtra = ''
+        bindkey -v
+      '';
     };
 
     programs.eza = {

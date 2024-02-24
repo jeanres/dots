@@ -3,5 +3,6 @@ require('lsp-setup').setup({
     tsserver = {},
     omnisharp = {},
     solargraph = {},
+    gopls = {},
   }
 })

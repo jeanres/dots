@@ -6,11 +6,11 @@ if vim.fn.empty(vim.fn.glob(install_path)) > 0 then
 end
 
 return require('packer').startup(function(use)
-  -- Packer can manage itself
   use('wbthomason/packer.nvim')
   use('nvim-lua/plenary.nvim')
   use('kyazdani42/nvim-web-devicons')
   use('nvim-telescope/telescope.nvim')
+  use{'nvim-telescope/telescope-fzf-native.nvim', run = 'make'}
   use('nvim-treesitter/nvim-treesitter-textobjects')
   use('nvim-lualine/lualine.nvim')
   use('nvim-treesitter/nvim-treesitter')
@@ -35,4 +35,6 @@ return require('packer').startup(function(use)
   use('nvim-tree/nvim-tree.lua')
   use('rose-pine/neovim')
   use('vimwiki/vimwiki')
+  use('jiaoshijie/undotree')
+  use('numToStr/Comment.nvim')
 end)

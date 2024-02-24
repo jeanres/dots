@@ -13,7 +13,8 @@ vim.opt.laststatus = 3
 vim.opt.termguicolors = true
 vim.opt.swapfile = false
 vim.opt.cmdheight = 0
-vim.opt.clipboard = unnamedplus
+vim.opt.clipboard = "unnamedplus"
+vim.o.hlsearch = false
 vim.opt.cursorline = true
 vim.g.mapleader = " "
 

@@ -16,7 +16,7 @@ require("nvim-tree").setup({
   },
 })
 
-vim.keymap.set('n', '<leader>b', ':NvimTreeToggle<CR>', {})
+vim.keymap.set('n', '<leader>tb', ':NvimTreeToggle<CR>', {})
 
 vim.api.nvim_create_autocmd("BufEnter", {
   nested = true,
