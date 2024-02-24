@@ -37,4 +37,6 @@ return require('packer').startup(function(use)
   use('vimwiki/vimwiki')
   use('jiaoshijie/undotree')
   use('numToStr/Comment.nvim')
+  use { "catppuccin/nvim", as = "catppuccin" }
+
 end)

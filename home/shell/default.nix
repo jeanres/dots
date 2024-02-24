@@ -78,6 +78,25 @@ in
       escapeTime = 0;
       baseIndex = 1;
       keyMode = "vi";
+      plugins = with pkgs;
+      [
+        {
+          plugin = tmuxPlugins.catppuccin;
+          extraConfig = '' 
+            set -g @catppuccin_flavour 'mocha'
+            set -g @catppuccin_status_modules "battery session"
+            set -g @catppuccin_status_left_separator "█"
+            set -g @catppuccin_status_right_separator "█"
+            set -g @catppuccin_date_time_text "%Y-%m-%d %H:%M:%S"
+            set -g @catppuccin_window_default_fill "number"
+            set -g @catppuccin_window_default_text "#W"
+            set -g @catppuccin_window_current_fill "number"
+            set -g @catppuccin_window_current_text "#W"
+          '';
+        }
+        tmuxPlugins.battery
+        tmuxPlugins.tmux-fzf
+      ];
       extraConfig = ''
         set -g default-terminal "tmux-256color" 
         set-option -g renumber-windows on

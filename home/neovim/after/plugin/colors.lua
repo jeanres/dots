@@ -1,8 +1,5 @@
-require('rose-pine').setup({
-	--- @usage 'auto'|'main'|'moon'|'dawn'
-	variant = 'moon',
-  disable_italics = true,
+require("catppuccin").setup({
+    flavour = "mocha"
 })
 
-vim.cmd[[colorscheme rose-pine]]
-
+vim.cmd.colorscheme "catppuccin"
