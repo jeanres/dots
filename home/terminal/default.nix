@@ -6,7 +6,7 @@
 
     font = {
       name = "VictorMono Nerd Font";
-      size = 18;
+      size = 16;
     };
 
     theme = "Catppuccin-Mocha"; # TODO: Pick a theme

@@ -16,6 +16,7 @@ vim.opt.cmdheight = 0
 vim.opt.clipboard = "unnamedplus"
 vim.o.hlsearch = false
 vim.opt.cursorline = true
+vim.opt.colorcolumn = "79"
 vim.g.mapleader = " "
 
 local opts = { noremap = true, silent = true }

@@ -23,6 +23,10 @@ in
       VISUAL = "nvim";
     };
 
+    programs.irssi = {
+      enable = true;
+    };
+
     programs.ssh = {
       enable = true;
       matchBlocks = {

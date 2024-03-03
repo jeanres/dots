@@ -38,5 +38,6 @@ return require('packer').startup(function(use)
   use('jiaoshijie/undotree')
   use('numToStr/Comment.nvim')
   use { "catppuccin/nvim", as = "catppuccin" }
-
+  use('tpope/vim-dadbod')
+  use('kristijanhusak/vim-dadbod-ui')
 end)

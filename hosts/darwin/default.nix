@@ -22,7 +22,7 @@
     enable = true;
     onActivation.autoUpdate = true;
     brews = [];
-    casks = [ "docker" "obs" ];
+    casks = [ "docker" "obs" "discord" "slack" "microsoft-teams" ];
   };
 
   fonts = {

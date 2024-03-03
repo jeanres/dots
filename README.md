@@ -22,3 +22,7 @@ nix build --extra-experimental-features "nix-command flakes" .\#darwinConfigurat
 ./result/sw/bin/darwin-rebuild switch --flake .
 ```
 
+## What it looks like
+
+
+
