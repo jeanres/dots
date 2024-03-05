@@ -40,4 +40,5 @@ return require('packer').startup(function(use)
   use { "catppuccin/nvim", as = "catppuccin" }
   use('tpope/vim-dadbod')
   use('kristijanhusak/vim-dadbod-ui')
+  use('mfussenegger/nvim-dap')
 end)
