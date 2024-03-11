@@ -9,7 +9,7 @@
       size = 16;
     };
 
-    theme = "Rosé Pine Moon"; # TODO: Pick a themeh
+    theme = "Catppuccin-Mocha";
 
     settings = {
       enable_audio_bell = false;

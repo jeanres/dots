@@ -42,4 +42,6 @@ return require('packer').startup(function(use)
   use('mfussenegger/nvim-dap')
   use('rcarriga/nvim-dap-ui')
   use('otavioschwanck/arrow.nvim')
+  use{ "catppuccin/nvim", as = "catppuccin" }
+  use('nvimtools/none-ls.nvim')
 end)
