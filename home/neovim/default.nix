@@ -59,26 +59,7 @@
     plugins = {
       gitsigns.enable = true;
       nvim-autopairs.enable = true;
-      lualine = {
-        enable = true;
-        globalstatus = true;
-        componentSeparators = {
-          left= " ";
-          right= " ";
-        };
-        sectionSeparators = {
-          left = " ";
-          right = " ";
-        };
-      };
       oil.enable = true;
-      telescope = {
-        enable = true;
-        keymaps = {
-          "<leader>ff" = "find_files";
-          "<leader>fg" = "live_grep";
-        };
-      };
       tmux-navigator = {
         enable = true;
       };
