@@ -1,4 +1,8 @@
 {
+  home.shellAliases = {
+    cd = "z";
+  };
+
   programs = {
     zsh = {
       enable = true;

@@ -36,6 +36,7 @@
       };
       NSGlobalDomain = {
         AppleShowScrollBars = "WhenScrolling";
+        _HIHideMenuBar = true; 
       };
     };
     keyboard = {
