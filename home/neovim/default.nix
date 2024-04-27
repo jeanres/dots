@@ -20,16 +20,11 @@
         options.silent = true;
         action = "<cmd>Oil<CR>";
       }
-      {
-        mode = "n";
-        key = "<Esc>";
-        action = " <cmd>nohlsearch<CR>";
-      }
     ];
 
     globals = {
       mapleader = " ";
-      maplocalleader = " ";
+      #maplocalleader = " ";
     };
 
     opts = {
