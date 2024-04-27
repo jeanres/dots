@@ -1,0 +1,9 @@
+layouts:
+  - fullscreen
+
+screen-padding-left: 30
+screen-padding-right: 30
+screen-padding-top: 30
+screen-padding-bottom: 30
+
+window-max-count: 1

@@ -13,11 +13,31 @@
     };
   };
 
+  imports = [
+    ./homebrew.nix
+  ];
+
   services.nix-daemon.enable = true;
 
   programs.zsh.enable = true;
 
   system = {
+    defaults = {
+      dock = {  
+        autohide = true;
+        mru-spaces = false;
+      };
+      CustomSystemPreferences = {
+        NSGlobalDomain = {
+          "com.apple.Safari" = {
+            IncludeDevelopMenu = true;
+          };
+        };
+      };
+      NSGlobalDomain = {
+        AppleShowScrollBars = "WhenScrolling";
+      };
+    };
     keyboard = {
       enableKeyMapping = true;
       remapCapsLockToEscape = true;
