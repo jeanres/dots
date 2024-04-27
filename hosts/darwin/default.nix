@@ -3,7 +3,8 @@
   nix = {
     package = pkgs.nixUnstable;
     extraOptions = ''
-      experimental-features = nix-command flakes
+    extra-platforms = x86_64-darwin
+    experimental-features = nix-command flakes
     '';
     gc = {
       automatic = true;

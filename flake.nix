@@ -17,8 +17,35 @@
     };
   };
 
-  outputs = { self, nixpkgs, darwin, home-manager, nixvim }: {
+  outputs = { self, nixpkgs, darwin, home-manager, nixvim } @inputs: {
     darwinConfigurations = {
+      carbon = darwin.lib.darwinSystem {
+        system = "x86_64-darwin"; 
+        modules = [
+          ./hosts/darwin
+          {
+            users.users."jeanre".home = "/Users/jeanre";
+          }
+          home-manager.darwinModules.home-manager
+          {
+            home-manager.useGlobalPkgs = true;
+            home-manager.extraSpecialArgs = { inherit inputs; };
+            home-manager.useUserPackages = true;
+
+            home-manager.users."jeanre" = { pkgs, ... }: {
+              imports = [
+                ./home/neovim	
+                ./home/tools/git 
+                ./home/applications/kitty
+                ./home/system/fonts
+                ./home/shell
+                ./home/tmux
+              ];
+              home.stateVersion = "24.05";
+            };
+          }
+        ];
+      };
       neon = darwin.lib.darwinSystem {
         system = "aarch64-darwin"; 
         modules = [
@@ -29,10 +56,11 @@
           home-manager.darwinModules.home-manager
           {
             home-manager.useGlobalPkgs = true;
+            home-manager.extraSpecialArgs = { inherit inputs; };
             home-manager.useUserPackages = true;
+
             home-manager.users."jeanre" = { pkgs, ... }: {
               imports = [
-                nixvim.homeManagerModules.nixvim
                 ./home/neovim	
                 ./home/tools/git 
                 ./home/applications/kitty
