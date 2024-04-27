@@ -13,6 +13,7 @@
     ];
     casks = [
       "amethyst"
+      "vladdoster/formulae/vimari"
     ];
     masApps = {
     };
