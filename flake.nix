@@ -63,7 +63,7 @@
               imports = [
                 ./home/neovim	
                 ./home/tools/git 
-                ./home/applications/kitty
+                ./home/applications
                 ./home/system/fonts
                 ./home/shell
                 ./home/tmux
