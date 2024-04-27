@@ -22,7 +22,7 @@
       carbon = darwin.lib.darwinSystem {
         system = "x86_64-darwin"; 
         modules = [
-          ./hosts/darwin
+          ./systems/darwin
           {
             users.users."jeanre".home = "/Users/jeanre";
           }
@@ -49,7 +49,7 @@
       neon = darwin.lib.darwinSystem {
         system = "aarch64-darwin"; 
         modules = [
-          ./hosts/darwin
+          ./systems/darwin
           {
             users.users."jeanre".home = "/Users/jeanre";
           }
