@@ -1,9 +1,9 @@
 layouts:
   - fullscreen
 
-screen-padding-left: 30
-screen-padding-right: 30
-screen-padding-top: 30
-screen-padding-bottom: 30
+screen-padding-left: 5
+screen-padding-right: 5
+screen-padding-top: 5
+screen-padding-bottom: 5
 
 window-max-count: 1
