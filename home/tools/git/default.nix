@@ -32,5 +32,7 @@
 
   home.shellAliases = {
     gs = "git status";
+    gco = "git checkout";
+    gp = "git push";
   };
 }
