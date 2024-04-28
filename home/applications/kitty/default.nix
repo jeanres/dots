@@ -4,7 +4,7 @@
 
     font = {
       name = "Victor Mono Nerd Font";
-      size = 18;
+      size = 14;
     };
 
     theme = "Catppuccin-Mocha";

@@ -54,6 +54,7 @@
     };
 
     plugins = {
+      comment.enable = true;
       gitsigns.enable = true;
       nvim-autopairs.enable = true;
       oil.enable = true;

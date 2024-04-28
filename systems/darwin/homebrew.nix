@@ -13,6 +13,7 @@
     ];
     casks = [
       "amethyst"
+      "docker"
       "vladdoster/formulae/vimari"
     ];
     masApps = {
